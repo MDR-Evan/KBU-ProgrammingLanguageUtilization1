@@ -2,7 +2,7 @@
 //다음 배열에서 홀수 번째 요소에 대한 값의 합을 출력하시오.
 //다음 배열에서 짝수 번째 요소에 대한 값의 합을 출력하시오.
 //int[] data = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-public class week9_Report1 {
+public class week8_Report1 {
     public static void main(String[] args) {
         int[] data = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         int total_result = 0, odd_result = 0, even_result = 0;

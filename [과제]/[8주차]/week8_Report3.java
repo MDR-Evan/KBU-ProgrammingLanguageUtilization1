@@ -1,7 +1,7 @@
 import java.util.Scanner;
 // 키보드로부터 주민등록번호를 입력 받아 주민등록번호가 올바른 번호인지 아닌지를 검사하는 프로그램을 배열을 사용하여 작성하여라.
 // 주민등록번호를 배열에 저장하여라
-public class week9_Report3 {
+public class week8_Report3 {
     public static void main(String[] args) {
         Scanner id = new Scanner(System.in);
         String idcard;
