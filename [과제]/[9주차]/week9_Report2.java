@@ -5,7 +5,7 @@ import java.util.Scanner;
 //체조 경기장에서 한 선수의 경기 내용을 7인의 채점관이 채점하여 최고 점수와 최소 점수를 제외한 5명의 채점관 점수를 평균하여 최종 점수로 한다.
 //점수는 100.0점 만점으로 최소 점수는 60.0점이다
 //홍길동 선수의 최종 점수를 계산하여라.
-public class week8_Report2 {
+public class week9_Report2 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 
