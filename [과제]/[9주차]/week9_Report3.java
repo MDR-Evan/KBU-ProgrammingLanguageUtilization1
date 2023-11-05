@@ -5,84 +5,41 @@ public class week9_Report3 {
     public static void main(String[] args) {
         Scanner id = new Scanner(System.in);
         String idcard;
-        int sum = 0, devide = 0, value = 0, result = 0;
+        int sum = 0, value = 0, result = 0;
         int[] verification = {2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5};
-
+        // 입력창
         System.out.printf("주민등록번호를 입력하세오.\n예시 : 000101-1111111\n입력 : ");
         idcard = id.nextLine();
-
+        // 하이픈 제거
         char[] chars = idcard.replace("-", "").toCharArray();
         int[] IDcardnumber = new int[12];
-
+        // 주민등록번호 오류검증
         for (int i = 0; i < 12; i++) {
             IDcardnumber[i] = Character.getNumericValue(chars[i]) * verification[i];
         }
-
+        // 검증코드 추출
         for (int i = 0; i < 12; i++) {
             sum += IDcardnumber[i];
-            devide = sum / 11;
             value = sum % 11;
         }
-
+        // 주민등록 검사 비트
         if (value < 10) {
             result = 11 - value;
         } else {
             result = 11 - 10;
         }
+        // 출력창
+        if (chars.length == 13) {
+            char 주민번호 = chars[12];
+            int 검증코드 = Character.getNumericValue(주민번호); // 12번째 숫자
 
-        if (result == 1) {
-            System.out.printf("");
+            if (result == 검증코드) {
+                System.out.println("올바른 주민번호입니다.");
+            } else {
+                System.out.println("올바르지 않은 주민번호입니다.");
+            }
+        } else {
+            System.out.println("주민등록번호의 길이가 올바르지 않습니다.");
         }
     }
 }
-//import java.io.Serializable;
-//import java.util.Scanner;
-//
-//public class week9_Report3 {
-//    public static void main(String[] args) {
-//        Scanner key = new Scanner(System.in);
-//        int[] jus1 = new int[13];
-//        int fos = 2,don=1,res=0,log=0,lag=0;
-//
-//        for (int i=0;i<=12;i++){
-//            System.out.printf("%d/13 주민등록번호를 입력하세요\n",don);
-//            jus1[i]= key.nextInt();
-//            don++;
-//        }
-//        for (int i=0;i<=12;i++){
-//            if (fos==10){
-//                fos=2;
-//                System.out.print(""+jus1[i]);
-//                jus1[i]=jus1[i]*fos;
-//                System.out.print("*"+fos);
-//                System.out.println("="+jus1[i]);
-//                res+=jus1[i];
-//                fos++;
-//            }else if (i<12){
-//                System.out.print(""+jus1[i]);
-//                jus1[i]=jus1[i]*fos;
-//                System.out.print("*"+fos);
-//                fos++;
-//                System.out.println("="+jus1[i]);
-//                res+=jus1[i];
-//            }else if (i==12){
-//                break;
-//            }
-//        }
-//        System.out.print("검증코드:"+jus1[12]);
-//        log=res%11;
-//        System.out.println("\n총합:"+res);
-//        System.out.println("나머지값:"+log);
-//        res=11;
-//        if (log>10||log==0){
-//            lag=(res-log)-10;
-//        }else {
-//            lag=res-log;
-//        }
-//        if (jus1[12]==lag){
-//            System.out.print("올바른 주민번호입니다.");
-//        }else {
-//            System.out.print("올바른 주민번호가 아닙니다.");
-//        }
-//    }
-//}
