@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Scanarea {
+public class week2_Report3 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         double radius, boxArea, circleArea, Area;               //radius = 반지름, boxArea = 정사각형 면적, sircleArea = 원의 면적

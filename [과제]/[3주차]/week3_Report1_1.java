@@ -1,4 +1,4 @@
-public class PrintTest_1 { // Data 개념 없이 Program 작성
+public class week3_Report1_1  { // Data 개념 없이 Program 작성
     public static void main(String[] args) {
 
         System.out.println("*********************");

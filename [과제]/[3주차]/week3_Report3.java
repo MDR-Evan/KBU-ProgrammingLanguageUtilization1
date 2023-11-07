@@ -1,4 +1,4 @@
-public class EarthToMoon {
+public class week3_Report3 {
     public static void main(String[] args) {
         final float ETM;
         double LOS;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ScanMyData {
+public class week2_Report2 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         int age;

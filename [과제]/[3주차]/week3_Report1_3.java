@@ -1,4 +1,4 @@
-public class PrintTest_3 {
+public class week3_Report1_3 {
     public static void main(String[] args) {
 
         String school;

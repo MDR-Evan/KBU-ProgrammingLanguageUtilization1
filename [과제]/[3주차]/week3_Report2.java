@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class introduction {
+public class week3_Report2 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ScanMyName {
+public class week2_Report1 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String name;
