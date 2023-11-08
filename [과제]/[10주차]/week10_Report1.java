@@ -15,7 +15,7 @@ public class week10_Report1 {
         String[] 국어 = new String[10];
         String[] 영어 = new String[10];
 
-        // 성적 입력란
+        // 학번/이름 입력란
         for (int i = 0; i < 학번이름.length; i++) {
             System.out.printf("\n학생 %d번의 성적을 입력하시오.\n", i + 1);
 
@@ -38,7 +38,7 @@ public class week10_Report1 {
             System.out.printf("이름 : ");
             학번이름[i][1] = input.next();
 
-
+            // 성적 입력란
             boolean 국어확인 = false;
             System.out.printf("국어 성적 : ");
 
