@@ -1,12 +1,16 @@
+import java.util.Scanner;
+
 public class week11_Report1 {
     public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
 
         String[][] person = { //사번, 이름
-                {"1123", "김달현"}, {"1123", "김달현"},
-                {"1123", "김달현"}, {"1123", "김달현"},
-                {"1123", "김달현"}, {"1123", "김달현"},
-                {"1123", "김달현"}, {"1123", "김달현"},
-                {"1123", "김달현"}, {"1123", "김달현"}
+                {"1123", "김달현"},
+//                {"1123", "김달현"},
+//                {"1123", "김달현"}, {"1123", "김달현"},
+//                {"1123", "김달현"}, {"1123", "김달현"},
+//                {"1123", "김달현"}, {"1123", "김달현"},
+//                {"1123", "김달현"}, {"1123", "김달현"}
         };
         int[][] data = { // 부서코드, 보훈(원호), 급, 호 , 공제액
                 {1, 0, 1, 2, 0}, {5, 0, 2, 2, 0},
@@ -22,7 +26,41 @@ public class week11_Report1 {
         };
         int[] department_pay = {250000, 250000, 350000, 350000, 300000}; // 경리, 인사, 영업, 생산, 서비스
         int[] grade_pay = {300000, 200000, 100000}; // 1급, 2급, 3급
+        int[] benefit_pay = new int[person.length];
         int i = 0;
+
+        // 입력
+        for (i = 0; i < person.length; i++) {
+            System.out.printf("사원 %d번의 이름을 입력하세요 : ", i + 1);
+            person[i][1] = keyboard.nextLine();
+            person[i][0] = null;
+
+            System.out.printf("%s 사원의 사번을 입력하세요 : ", person[i][1]);
+            while (person[i][0] == null) {
+                String ID = keyboard.nextLine();
+                if (ID.length() == 4) {
+                    person[i][0] = ID;
+                } else {
+                    System.err.print("사번은 4자여야 합니다. 다시 입력해주세요 : ");
+                }
+            }
+
+            System.out.printf("%s 사원의 부서코드를 입력하세요 : ", person[i][1]);
+            data[i][0] = keyboard.nextInt();
+
+            System.out.printf("%s 사원의 보훈의 여부를 입력하세요 ('O' = 1, 'X' = 0): ", person[i][1]);
+            data[i][1] = keyboard.nextInt();
+
+            System.out.printf("%s 사원의 직급을 입력하세요 : ", person[i][1]);
+            data[i][2] = keyboard.nextInt();
+
+            System.out.printf("%s 사원의 호봉을 입력하세요 : ", person[i][1]);
+            data[i][3] = keyboard.nextInt();
+
+            System.out.printf("%s 사원의 공제액을 입력하세요 (MAX 300,000원) : ", person[i][1]);
+            benefit_pay[i] = keyboard.nextInt();
+            keyboard.nextLine();
+        }
 
         // 부서코드 -> 부서
         String[] department = new String[person.length];
@@ -121,25 +159,44 @@ public class week11_Report1 {
         }
 
         // 개인공제
-        
-        /**
-         * 공제금은 개인의 저축 금액으로 30만원을 넘지 않음
-         * 기본 공제는 (기본급 + 업무 수당 + 직급 수당)의 3%
-         * 개인 공제 = 공제금 + 기본 공제
-         * 기본급과 각종 수당을 합한 금액에서 개인 공제를 뺀 금액을 과세 대상 금액으로 함
-         * 세금은 과세 대상 금액을 기준으로 일정 요율을 적용
-         * 보훈 대상자이면서 세금 대상자는 기본급의 3%의 세금만을 징수함
-         * 지급액 = 본봉 + 업무수당 + 직급수당 - 개인공제 합(저축 + 기본 공제) - 세금
-         * 출력 시 지급액의 내림차순으로 정렬할 것
-         */
+        int[] personal_benefit = new int[person.length];
+        for (i = 0; i < person.length; i++) {
+            data[i][4] = (int) ((salary[i] + grade_salary[i] + department_salary[i]) * 0.03f);
+            personal_benefit[i] = benefit_pay[i] + data[i][4];
+        }
+
+
+        // 세금
+        int[] tax = new int[person.length];
+        for (i = 0; i < person.length; i++) {
+            int[] temp = new int[person.length];
+            temp[i] = (salary[i] + grade_salary[i] + department_salary[i]) - personal_benefit[i];
+            if (salary[i] > 700000) {
+                if (data[i][1] == 1 && 700000 <= salary[i]) {
+                    tax[i] = (int) (salary[i] * 0.03f);
+                } else if (data[i][1] == 0 && 700000 <= salary[i] && salary[i] < 800000) {
+                    tax[i] = (int) (salary[i] * 0.05f);
+                } else if (data[i][1] == 0 && 800000 <= salary[i] && salary[i] < 1000000) {
+                    tax[i] = (int) (salary[i] * 0.07f);
+                } else {
+                    tax[i] = (int) (salary[i] * 0.09f);
+                }
+            } else {
+                tax[i] = 0;
+            }
+        }
+
+        // 지급액
+        int[] pay = new int[person.length];
+        for (i = 0; i < person.length; i++) {
+            pay[i] = salary[i] + department_salary[i] + grade_salary[i] - personal_benefit[i] - tax[i];
+        }
 
         System.out.println("==========================================================================================================================");
         System.out.println("부서      사번      이름      급-호     원호      본봉      직급수당        업무수당        개인공제        세금      지급액     비고");
         System.out.println("==========================================================================================================================");
         for (i = 0; i < person.length; i++) {
-            System.out.printf("%s   %s      %s      %d-%d       %s      %d      %d      %d\n",department[i] ,person[i][0], person[i][1], data[i][2], data[i][3], bohun[i], salary[i], grade_salary[i], department_salary[i]);
-
-
+            System.out.printf("%s   %s      %s      %d-%d       %s      %d      %d      %d      %d      %d      %d\n",department[i] ,person[i][0], person[i][1], data[i][2], data[i][3], bohun[i], salary[i], grade_salary[i], department_salary[i], personal_benefit[i], tax[i], pay[i]);
         }
         System.out.println("==========================================================================================================================");
     }
