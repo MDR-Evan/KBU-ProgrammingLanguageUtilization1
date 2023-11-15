@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class 성적입력break {
+public class week7_exam4 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 

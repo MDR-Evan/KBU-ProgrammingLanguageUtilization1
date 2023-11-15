@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 /* 다음 조건에 따라 급여액에 따른 세금을 계산하는 프로그램 을 작성하여라. 단, 30,000,000원 초과하는 급여 자는 없다 */
-public class 세금계산프로그램 {
+public class week6_exam4 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 

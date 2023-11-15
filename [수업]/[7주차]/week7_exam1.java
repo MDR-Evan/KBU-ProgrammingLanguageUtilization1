@@ -1,5 +1,5 @@
 /* 1에서 10 마일(mile)을 까지 입력 받아 미터(meter)법으로 환산하는 Program을 작성하여라 */
-public class Mile을Meter로변환 {
+public class week7_exam1 {
     public static void main(String[] args) {
         float mile;
         final float unit = 1609.344f;

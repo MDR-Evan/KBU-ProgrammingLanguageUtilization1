@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /* 정수 num1, num2를 입력 받아 그 중에서 큰 수를 출력하 는 Program을 작성 하시오. */
-public class 더큰수찾는프로그램 {
+public class week6_exam1 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

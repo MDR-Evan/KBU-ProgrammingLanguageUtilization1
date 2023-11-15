@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /* 사용자의 나이와 성별, 키, 몸무게를 입력 받은 후 표준 체 중을 구하고 다음 공식을 이용하여 얼마나 저 체중, 정상 또 는 초과(경도, 중등도, 경도비만) 인지를 표시하는 프로그램 을 작성하여라 */
-public class 표준체중과다이어트판별프로그램 {
+public class week6_exam6 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex1 {
+public class week2_exam1 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         int width; //가로 길이

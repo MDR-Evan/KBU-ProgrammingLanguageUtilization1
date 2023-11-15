@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Program { //사다리꼴의 넓이를 구하는 Progra
+public class week5_exam2 { //사다리꼴의 넓이를 구하는 Progra
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

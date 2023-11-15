@@ -1,4 +1,4 @@
-public class Ex5 {
+public class week2_exam5 {
     public static void main(String[] args) {
         String name = "나미라";
         int age = 21;

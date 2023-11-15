@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 // 크기가 10인 정수형 배열을 생성하고 여기에 10부터 100까지의 값으로 배열을 채우는 프로그램을 작성해 보자
-public class 일차원배열예제1 {
+public class week9_exam2 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 

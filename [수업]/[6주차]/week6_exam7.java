@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /* 임의의 정수를 읽어서 그 수가 홀수인지 짝수인지를 판별하 는 순서도 및 Program을 작성하자. */
-public class 홀수짝수판별프로그램 {
+public class week6_exam7 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

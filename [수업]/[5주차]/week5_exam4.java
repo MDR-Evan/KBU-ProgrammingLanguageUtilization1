@@ -1,4 +1,4 @@
-public class Program4 { // 지구(Earth)의 표면적에서 대한민국이 얼마를 차지하고 있는지 구하는 Program
+public class week5_exam4 { // 지구(Earth)의 표면적에서 대한민국이 얼마를 차지하고 있는지 구하는 Program
     public static void main(String[] args) {
 
         final int Earth_R= 6378137, KOREA = 99720000;

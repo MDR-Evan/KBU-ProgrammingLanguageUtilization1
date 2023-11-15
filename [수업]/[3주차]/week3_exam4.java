@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test3 { //예제 : 자동차 연비 계산
+public class week3_exam4 { //예제 : 자동차 연비 계산
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         float oil, kilo, 연비;

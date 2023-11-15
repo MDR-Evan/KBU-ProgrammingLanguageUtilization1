@@ -1,5 +1,5 @@
 /* 한 줄에 별표(*) 다섯 개를 다섯 줄에 출력하는 Program 작성하여라 */
-public class 도입예제 {
+public class week7_exam3 {
     public static void main(String[] args) {
         int i, j;
 

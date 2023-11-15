@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /* 어떤 양의 정수를 입력 받아 그것이 소수인지 검사하는 프 로그램을 작성하여라. */
-public class 소수검사 {
+public class week7_exam6 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 

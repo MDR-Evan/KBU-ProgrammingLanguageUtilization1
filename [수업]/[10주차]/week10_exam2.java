@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // 10명의 출전 선수(이름과 소속이 있음)를 처리 하려면 어떻게 해야 할까요?
-public class 체조경기심화 {
+public class week10_exam2 {
     public static void main(String[] args) throws IOException {
         Scanner 입력 = new Scanner(System.in);
         String[][] 사람 = {

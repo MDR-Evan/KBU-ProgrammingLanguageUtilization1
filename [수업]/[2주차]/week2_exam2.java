@@ -1,4 +1,4 @@
-public class Ex2 { //입력 + 출력 하는 프로그램
+public class week2_exam2 { //입력 + 출력 하는 프로그램
     public static void main(String[] args) {
 
         String university = "景福大學校";

@@ -1,4 +1,4 @@
-public class Ex4 {
+public class week2_exam4 {
     public static void main(String[] args) {
         String name = "홍길동";
 

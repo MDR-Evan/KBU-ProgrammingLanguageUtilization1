@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Program3 { // 당신의 체중을 입력 받아 금값으로 계산하는 Program (1,000원 미만은 버림)
+public class week5_exam5 { // 당신의 체중을 입력 받아 금값으로 계산하는 Program (1,000원 미만은 버림)
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         float weight, gram, result;

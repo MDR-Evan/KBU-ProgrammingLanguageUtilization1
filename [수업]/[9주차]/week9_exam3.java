@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 
-public class 표준체중과Diet {
+public class week9_exam3 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex {//양의 정수를 받아 짝수인지 홀수인지 판단하는 프로그램 작성
+public class week4_exam3 {//양의 정수를 받아 짝수인지 홀수인지 판단하는 프로그램 작성
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

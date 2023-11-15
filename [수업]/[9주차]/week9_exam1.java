@@ -1,6 +1,6 @@
 import java.util.Scanner;
 //임의의 문자열을 입력 받아 역순으로 출력하는 Program을 작성하시오.
-public class 역순출력 {
+public class week9_exam1 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String temp;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex3 { // 사각형의 넓이 계산
+public class week4_exam2 { // 사각형의 넓이 계산
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

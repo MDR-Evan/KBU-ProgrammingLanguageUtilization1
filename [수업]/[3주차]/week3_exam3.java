@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test4 { // 아르바이트 급여 계산
+public class week3_exam3 { // 아르바이트 급여 계산
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         int wallat, pay, time, salary;

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test1 {
+public class week3_exam2 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String school = "경복대학교";                    //선언문

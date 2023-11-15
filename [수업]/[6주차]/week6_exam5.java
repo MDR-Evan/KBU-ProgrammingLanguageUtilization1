@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /* 100m 기록이 10초 미만이면 육상선수 후보, 11초 미만이 면 축구선수 후보, 12초 미만이면 하키선수 후보, 그 외는 부적합을 출력하는 프로그램을 작성하자 (입력은 소수점 두 자리 까지) */
-public class 운동선수후보선발프로그램 {
+public class week6_exam5 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

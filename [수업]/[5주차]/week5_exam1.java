@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Program5 { //평생 담배를 피우면 얼마의 시간이 수명 단축되는지 계산하는 Program
+public class week5_exam1 { //평생 담배를 피우면 얼마의 시간이 수명 단축되는지 계산하는 Program
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

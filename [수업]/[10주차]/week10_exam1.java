@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // 체조 경기장에서 한 선수의 경기 내용을 7인의 채점관이 채점하여 최고 점수 와 최소 점수를 삭제한 5명의 채점관 점수를 평균하여 점수로 한다.
 // 100점 만점으로 최소 점수는 60점이다.
-public class 체조경기 {
+public class week10_exam1 {
     public static void main(String[] args) throws IOException {
         Scanner c1 = new Scanner(System.in);
 

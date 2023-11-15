@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Program2 { //사람은 평생 몇 회의 심작 박동을 하는지 구하는 Program
+public class week5_exam3 { //사람은 평생 몇 회의 심작 박동을 하는지 구하는 Program
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 

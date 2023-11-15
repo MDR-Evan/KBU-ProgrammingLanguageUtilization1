@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.util.Scanner;
 /* 9자리 이하의 정수를 입력받아 입력된 수의 거꾸로 수를 구 하는 프로그램을 작성하여라. */
-public class 거꾸로수 {
+public class week7_exam2 {
     public static void main(String[] args) throws IOException {
         Scanner keyboard = new Scanner(System.in);
 

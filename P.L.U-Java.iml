@@ -2,7 +2,19 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/[수업]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[10주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[11주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[12주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[2주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[3주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[4주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[5주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[6주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[7주차]" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/[수업]/[9주차]" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

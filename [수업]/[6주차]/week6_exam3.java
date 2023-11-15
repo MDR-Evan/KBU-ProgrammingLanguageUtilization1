@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /* 세 정수를 입력 받아, 그 중에서 가장 큰 수를 찾는 Program을 하여라. */
-public class 세가지중더큰수찾는프로그램 {
+public class week6_exam3 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
