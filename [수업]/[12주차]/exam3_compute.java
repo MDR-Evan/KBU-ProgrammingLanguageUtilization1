@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class 섭씨온도_변환기 {
-    public 섭씨온도_변환기() {     // 생성자
+public class exam3_compute {
+    public exam3_compute() {     // 생성자
     }
 
     public static void display(double temp, double convert) {
