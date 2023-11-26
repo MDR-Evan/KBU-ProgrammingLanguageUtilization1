@@ -6,16 +6,10 @@ public class week13_Report1_2 { //1차원
                 };
 
         print(data, "******* Source data *******");
-        result();
-        print(data, "\n******* Triple data *******");
-    }
-
-    private static void result(int[][] data) {
         for (int i = 0; i < data.length; i++) {
-            for (int j = 0; j< data[i].length; j++) {
-                triple(data[i][j]);
-            }
+            triple(data[i]);
         }
+        print(data, "\n******* Triple data *******");
     }
 
     private static void triple(int[] data) {
