@@ -11,21 +11,21 @@ public class week13_exam5 {
                 };
         display(data,"before");
 //        multiful(data);       // call by reference 3차원 배열
-//        for (int i = 0; i < data.length; i++) {
-//            multiful(data[i]);      // call by reference 2차원 배열
-//        }
+        for (int i = 0; i < data.length; i++) {
+            multiful(data[i]);      // call by reference 2차원 배열
+        }
 //        for (int i = 0; i < data.length; i++) {
 //            for (int j = 0; j < data[i].length; j++) {
 //                multiful(data[i][j]);   // call by reference 1차원 배열
 //            }
 //        }
-        for (int i = 0; i < data.length; i++) {
-            for (int j = 0; j < data[i].length; j++) {
-                for (int k = 0; k < data[i][j].length; k++) {
-                    data[i][j][k] = multiful(data[i][j][k]);   // call by value
-                }
-            }
-        }
+//        for (int i = 0; i < data.length; i++) {
+//            for (int j = 0; j < data[i].length; j++) {
+//                for (int k = 0; k < data[i][j].length; k++) {
+//                    data[i][j][k] = multiful(data[i][j][k]);   // call by value
+//                }
+//            }
+//        }
         display(data, "after");
     }
 
