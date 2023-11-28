@@ -9,6 +9,29 @@ public class week13_Report3 {
         System.out.printf("right = %d, left = %d \n", count(table, "right"), count(table, "left")); // 얜 머임
     }
 
+    private static Object count(int[][] table, String correct) {
+        if (correct == "right") {
+            int i, j = 0;
+            int result = 0;
+
+            for (i = 0; i < table.length; i++, j++) {
+                result += table[i][j];
+            }
+            return result;
+        } else if (correct == "left"){
+            int i, j = 4;
+            int result = 0;
+
+            for (i = 0; i < table.length; i++, j--) {
+                result += table[i][j];
+            }
+            return result;
+        } else {
+            System.err.println("오!!!!!류!!!!발!!!!생!!!!!");
+        }
+        return null;
+    }
+
     private static Object countleft(int[][] table) {
         int i, j = 4;
         int result = 0;
