@@ -16,14 +16,14 @@ public class week14_exam1 {
         input.give(money);                                                                                              // 수당 입력(자동)
 
         week14_exam1_Proccesing proccesing = new week14_exam1_Proccesing();
-        proccesing.pay_stepProcess(person, money);                                                                      // 수당 계산
+        proccesing.pay_stepProcess(person, money);                                                                      // 기본급 계산
         proccesing.wagesProcess(money);                                                                                 // 급여액 계산
         proccesing.taxProcess(money);                                                                                   // 세금 계산
         proccesing.pensionProcess(money);                                                                               // 연금 계산
         proccesing.salaryProcess(money);                                                                                // 지급액 계산
         
         week14_exam1_Output output = new week14_exam1_Output();                                                         // 생성자
-        output.sort(person, money);                                                                                     // 정렬
+//        output.sort(person, money);                                                                                     // 정렬
         output.display(person, money);                                                                                  // Call By Reference
 
 //        output.line();
